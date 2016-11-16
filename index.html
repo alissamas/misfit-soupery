@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Misfit Soupery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+    <link rel="stylesheet" href="scrolltrigger.css" media="screen">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <script src="https://use.typekit.net/ppu0eyx.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
+  <body>
+    <header>
+      <img data-scroll="toggle(.fromBottomIn, .fromBottomOut)" src="logo.png">
+    </header>
+
+    <main>
+      <hr>
+      <h1>our story</h1>
+      <div class="our-story">
+        <img src="bboy2.gif">
+        <div class="story">
+          <p>Humans come in many shapes and sizes, and so do vegetables. Millions of tons of fresh, perfectly good produce is wasted each year due to needlessly unyeilding cosmetic standards.</p>
+          <hr>
+          <p>We at the Misfit Soupery take pride in purchasing vegetables from local farmers that would otherwise be deemed unsellable, then work our magic to transform them into some damn good soup.</p>
+          <hr>
+          <p>Our soup is not good for the body and good for your soul, it’s good for the environment.</p>
+        </div>
+      </div>
+
+        <hr>
+      <h1>signature soups</h1>
+      <h2>good for the body, soul and planet earth.</h2>
+      <div class="soups">
+        <div><img src="soup1.png"></div>
+        <div><img src="soup2.png"></div>
+        <div><img src="soup3.png"></div>
+        <div><img src="soup4.png"></div>
+      </div>
+
+      <hr>
+      <h1>find us</h1>
+      <div class="location-list">
+        <div class="column1">
+          <div class="location">
+            <h4>KCC Farmer's Market</h4>
+            <h5>Tuesdays 4-7pm&amp; Saturdays 7:30-11am</h5>
+            <h6>Kapiolani Community College</h6>
+          </div>
+          <div class="location">
+            <h4>Manoa Farmer's Market</h4>
+            <h5>Tuesday &amp; Sundays 7-11am</h5>
+            <h6>2753 Woodlawn Dr</h6>
+          </div>
+          <div class="location">
+            <h4>Blaisdell Farmer's Market</h4>
+            <h5>Wednesdays, 4-7pm</h5>
+            <h6>777 Ward Ave</h6>
+          </div>
+          <div class="location">
+            <h4>Fort St, Mall Farmer's Market</h4>
+            <h5>Tuesdays &amp; Fridays, 7am-2pm</h5>
+            <h6>Fort St. Mall</h6>
+          </div>
+        </div>
+        <div class="column2">
+          <div class="location">
+            <h4>Whole Foods Kahala</h4>
+            <h5>Kahala Mall</h5>
+            <h6>Honolulu, Hawaii 96816</h6>
+          </div>
+          <div class="location">
+            <h4>Whole Foods Kailua</h4>
+            <h5>629 Kailua Rd #100</h5>
+            <h6>Kailua, Hawaii 96734</h6>
+          </div>
+          <div class="location">
+            <h4>Down to Earth Pearlridge</h4>
+            <h5>98-129 Kaonohi St</h5>
+            <h6>Aiea, Hawaii 96701</h6>
+          </div>
+          <div class="location">
+            <h4>Down to Earth University Ave</h4>
+            <h5>2525 S King St</h5>
+            <h6>Honolulu, Hawaii 96826</h6>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="slick.min.js"></script>
+  <script src="ScrollTrigger.min.js"></script>
+  <script>
+  window.counter = function() {
+    // this refers to the html element with the data-scroll-showCallback tag
+    var span = this.querySelector('span');
+    var current = parseInt(span.textContent);
+
+    span.textContent = current + 1;
+  };
+
+  document.addEventListener('DOMContentLoaded', function(){
+    var trigger = new ScrollTrigger({
+      addHeight: true
+    });
+  });
+  </script>
+  <script src="script.js"></script>
+</html>
