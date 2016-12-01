@@ -59,7 +59,7 @@ body.down header.clone {
 }
 
 .hero {
-  height: 500px;
+  height: 550px;
 }
 
 .hero .logo {
@@ -85,10 +85,12 @@ body.down header.clone {
   font-weight: 400;
   margin-bottom: 80px;
   color: white;
+  border: 1px solid white;
+  padding: 20px 100px;
 }
 
 hr {
-  color: white;
+  color: #86786F;
   border-style: solid;
   border: 1px solid #fff;
   margin: 70px 0;
@@ -124,7 +126,7 @@ main h1 {
 
 .our-story hr {
   margin: 20px 0;
-  border-color: #666;
+  border-color: #86786F;
   transform:scaleY(0.5);
 }
 
@@ -133,7 +135,7 @@ main h1 {
 }
 
 .our-story p {
-  color: #666;
+  color: #86786F;
   font-weight: 400;
 }
 
@@ -210,20 +212,20 @@ h2 {
 }
 
 .location h4 {
-  color: #666;
+  color: #86786F;
   font-family: "mrs-eaves", serif;
 }
 
 .location h5 {
   font-size: 1rem;
   font-weight: 400;
-  color: #666;
+  color: #86786F;
 }
 
 .location h6 {
   font-size: 1rem;
   font-weight: 400;
-  color: #666;
+  color: #86786F;
 }
 
 .limbo {
@@ -235,25 +237,42 @@ h2 {
 }
 
 .contact {
-  height: 530px;
+  height: 300px;
   text-align: center;
+  display: flex;
 }
 
 .contact a {
-  display: inline-block;
-  margin: 40px 100px;
-  color: white;
+  display: block;
+  margin: 20px;
+  color: #86786F;
   font-family: "mrs-eaves";
 }
 
+.contact-info {
+  width: 50%;
+  margin-top: 60px;
+}
+
+.carrot {
+  width: 50%;
+}
+
 .contact p {
-  color: #666;
+  color: #86786F;
 }
 
 .contact img {
   width: 250px;
   margin: 0 auto;
   display: block;
+}
+
+.copyright p {
+  text-align: center;
+  color: #86786F;
+  display: block;
+  padding-bottom: 100px;
 }
 
 footer {
@@ -266,4 +285,69 @@ footer {
 }
 
 @media only screen and (max-width: 1020px) {
+  .our-story {
+    width: 100%;
+  }
+
+  .our-story img {
+    margin-left: 0;
+  }
 }
+
+@media only screen and (max-width: 815px) {
+  .our-story img {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media only screen and (max-width: 680px) {
+    .our-story {
+      flex-wrap: wrap;
+    }
+
+    .our-story img {
+      margin: 0 auto;
+    }
+
+    .story {
+      width: 100%;
+    }
+
+    .location-list {
+      flex-direction: column;
+    }
+
+    .location {
+      text-align: center;
+    }
+
+    .column1 {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .limbo {
+      width: 160px;
+    }
+
+    .contact {
+      flex-direction: column;
+      height: 400px;
+    }
+
+    .contact-info {
+      width: 100%;
+    }
+
+    .carrot {
+      width: 100%;
+    }
+
+    .carrot img {
+      width: 200px;
+    }
+
+    .copyright p {
+      padding-bottom: 60px;
+    }
+  }
